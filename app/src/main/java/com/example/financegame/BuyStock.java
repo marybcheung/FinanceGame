@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class BuyStock extends MainActivity {
+    private Button buyButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,14 @@ public class BuyStock extends MainActivity {
             @Override
             public void onClick(View v) {
                 openRewards();
+            }
+        });
+
+        buyButton = (Button) findViewById(R.id.buy);
+        buyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buy();
             }
         });
     }
