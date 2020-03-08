@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Stocks extends MainActivity {
     private Button openStockButton;
@@ -63,6 +64,9 @@ public class Stocks extends MainActivity {
                 openRewards();
             }
         });
+
+        textView = (TextView) findViewById(R.id.textView);
+        textView.setText(Integer.toString(this.gameState.getPoints()));
     }
 
     public void openMyStock() {

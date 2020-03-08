@@ -7,6 +7,19 @@
     android:background="@drawable/sellstockv2"
     tools:context=".SellStock">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="46dp"
+        android:layout_height="16dp"
+        android:background="#FFFFFF"
+        android:text="1000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
     <Button
         android:id="@+id/marketButton"
         android:layout_width="56dp"

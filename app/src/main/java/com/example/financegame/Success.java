@@ -53,6 +53,8 @@ public class Success extends MainActivity {
                 openGamesMenu();
             }
         });
+
+        super.gameState.incrementPoints(800);
     }
 
 

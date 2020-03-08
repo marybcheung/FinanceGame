@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class GamesMenu extends MainActivity {
     private Button game4Button, game3Button;
@@ -71,6 +72,9 @@ public class GamesMenu extends MainActivity {
                 openGame3();
             }
         });
+
+        textView = (TextView) findViewById(R.id.textView);
+        textView.setText(Integer.toString(this.gameState.getPoints()));
     }
 
     public void openGame4() {

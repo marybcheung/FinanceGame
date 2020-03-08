@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     protected Button gamesMenuButton, homeButton, marketButton, myStocksButton;
+    protected TextView textView;
     protected ImageButton rewardsButton;
+    protected static GameState gameState = new GameState();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 openRewards();
             }
         });
+
+        textView = (TextView) findViewById(R.id.textView);
+        textView.setText(Integer.toString(this.gameState.getPoints()));
     }
 
     public void openHome() {
