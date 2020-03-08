@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class SellStock extends MainActivity {
-    private Button Sell;
+    private Button sellButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
