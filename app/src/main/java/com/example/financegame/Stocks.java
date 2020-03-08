@@ -2,11 +2,13 @@ package com.example.financegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class Stocks extends MainActivity {
+    private Button openStockButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +46,18 @@ public class Stocks extends MainActivity {
                 openGamesMenu();
             }
         });
+
+        openStockButton = (Button) findViewById(R.id.openStock);
+        openStockButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMyStock();
+            }
+        });
+    }
+
+    public void openMyStock() {
+        Intent intent = new Intent(this, SellStock.class);
+        startActivity(intent);
     }
 }
