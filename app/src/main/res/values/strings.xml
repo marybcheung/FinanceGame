@@ -6,4 +6,6 @@
     <string name="my_stocks">my stocks</string>
     <string name="level_1">level 1</string>
     <string name="level_2">level 2</string>
+    <string name="stocks">Stocks</string>
+    <string name="markets">Markets</string>
 </resources>

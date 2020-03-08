@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        homeButton = (Button) findViewById(R.id.button);
+        homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myStocksButton = (Button) findViewById(R.id.button);
+        myStocksButton = (Button) findViewById(R.id.myStocksButton);
         myStocksButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        marketButton = (Button) findViewById(R.id.button);
+        marketButton = (Button) findViewById(R.id.marketButton);
         marketButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        gamesMenuButton = (Button) findViewById(R.id.button);
+        gamesMenuButton = (Button) findViewById(R.id.gamesButton);
         gamesMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openMyStocks() {
-        Intent intent = new Intent(this, GamesMenu.class);
+        Intent intent = new Intent(this, Stocks.class);
         startActivity(intent);
     }
 
     public void openMarket() {
-        Intent intent = new Intent(this, GamesMenu.class);
+        Intent intent = new Intent(this, Market.class);
         startActivity(intent);
     }
 
