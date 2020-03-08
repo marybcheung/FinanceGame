@@ -13,7 +13,7 @@ public class Rewards extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_market);
+            setContentView(R.layout.activity_rewards);
 
             homeButton = (Button) findViewById(R.id.homeButton);
             homeButton.setOnClickListener(new View.OnClickListener() {
