@@ -2,6 +2,7 @@ package com.example.financegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -62,5 +63,10 @@ public class BuyStock extends MainActivity {
                 buy();
             }
         });
+    }
+
+    public void buy() {
+        Intent intent = new Intent(this, Market.class);
+        startActivity(intent);
     }
 }
