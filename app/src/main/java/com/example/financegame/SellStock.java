@@ -64,7 +64,7 @@ public class SellStock extends MainActivity {
             }
         });
     }
-
+//
     public void sell() {
         Intent intent = new Intent(this, Stocks.class);
         startActivity(intent);
