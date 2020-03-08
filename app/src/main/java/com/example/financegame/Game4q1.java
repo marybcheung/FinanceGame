@@ -2,18 +2,17 @@ package com.example.financegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-public class Game4 extends MainActivity {
-    private Button playButton, exitButton;
+public class Game4q1 extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game_4);
+        setContentView(R.layout.activity_game4q1);
 
         homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -47,30 +46,5 @@ public class Game4 extends MainActivity {
             }
         });
 
-        exitButton = (Button) findViewById(R.id.exit);
-        exitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                returnToGames();
-            }
-        });
-
-        playButton = (Button) findViewById(R.id.playButton);
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                playGame4();
-            }
-        });
-    }
-
-    public void returnToGames() {
-        Intent intent = new Intent(this, GamesMenu.class);
-        startActivity(intent);
-    }
-
-    public void playGame4() {
-        Intent intent = new Intent(this, Game4q1.class);
-        startActivity(intent);
     }
 }
