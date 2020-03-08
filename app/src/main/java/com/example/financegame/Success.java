@@ -5,14 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-public class SellStock extends MainActivity {
+public class Success extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell_stock);
+        setContentView(R.layout.activity_success);
 
         homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -43,14 +42,6 @@ public class SellStock extends MainActivity {
             @Override
             public void onClick(View v) {
                 openGamesMenu();
-            }
-        });
-
-        rewardsButton = (ImageButton) findViewById(R.id.rewardsButton);
-        rewardsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRewards();
             }
         });
     }
