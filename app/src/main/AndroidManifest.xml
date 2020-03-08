@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Game4q1"></activity>
+        <activity android:name=".Game3Correct"></activity>
+        <activity android:name=".Game3Error" />
+        <activity android:name=".Game3play" />
+        <activity android:name=".Game3" />
+        <activity android:name=".Game4q1" />
         <activity android:name=".Success" />
         <activity android:name=".Oops" />
         <activity android:name=".BuyStock" />
