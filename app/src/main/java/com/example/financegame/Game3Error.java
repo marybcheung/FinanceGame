@@ -48,7 +48,7 @@ public class Game3Error extends MainActivity {
             }
         });
 
-        tryAgain = (Button) findViewById(R.id.tryagain);
+        tryAgain = (Button) findViewById(R.id.tryagain3);
         tryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,7 @@ public class Game3Error extends MainActivity {
     }
 
     public void tryAgain() {
-        Intent intent = new Intent(this, Game4q1.class);
+        Intent intent = new Intent(this, Game3play.class);
         startActivity(intent);
     }
 }

@@ -1,17 +1,17 @@
 package com.example.financegame;
 
-import android.content.Intent;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Oops extends MainActivity {
-    private Button tryAgain;
+public class RedeemedCoupon extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oops);
+        setContentView(R.layout.activity_redeemed_coupon);
 
         homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -44,18 +44,5 @@ public class Oops extends MainActivity {
                 openGamesMenu();
             }
         });
-
-        tryAgain = (Button) findViewById(R.id.tryagain4);
-        tryAgain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                tryAgain();
-            }
-        });
-    }
-
-    public void tryAgain() {
-        Intent intent = new Intent(this, Game4q1.class);
-        startActivity(intent);
     }
 }
