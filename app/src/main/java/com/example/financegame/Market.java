@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Market extends MainActivity {
 
@@ -42,6 +43,14 @@ public class Market extends MainActivity {
             @Override
             public void onClick(View v) {
                 openGamesMenu();
+            }
+        });
+
+        rewardsButton = (ImageButton) findViewById(R.id.rewardsButton);
+        rewardsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRewards();
             }
         });
     }

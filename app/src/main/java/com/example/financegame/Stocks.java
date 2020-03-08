@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Stocks extends MainActivity {
     private Button openStockButton;
@@ -52,6 +53,14 @@ public class Stocks extends MainActivity {
             @Override
             public void onClick(View v) {
                 openMyStock();
+            }
+        });
+
+        rewardsButton = (ImageButton) findViewById(R.id.rewardsButton);
+        rewardsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRewards();
             }
         });
     }

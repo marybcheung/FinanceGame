@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     protected Button gamesMenuButton, homeButton, marketButton, myStocksButton;
+    protected ImageButton rewardsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 openGamesMenu();
             }
         });
+
+        rewardsButton = (ImageButton) findViewById(R.id.rewardsButton);
+        rewardsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRewards();
+            }
+        });
     }
 
     public void openHome() {
@@ -65,6 +75,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openGamesMenu() {
         Intent intent = new Intent(this, GamesMenu.class);
+        startActivity(intent);
+    }
+
+    public void openRewards() {
+        Intent intent = new Intent(this, Rewards.class);
         startActivity(intent);
     }
 }
