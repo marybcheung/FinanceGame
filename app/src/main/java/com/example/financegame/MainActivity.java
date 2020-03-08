@@ -11,14 +11,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton gamesMenuButton, homeButton, marketButton, myStocksButton;
+    private Button gamesMenuButton, homeButton, marketButton, myStocksButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        homeButton = (ImageButton) findViewById(R.id.homeButton);
+        homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myStocksButton = (ImageButton) findViewById(R.id.myStocksButton);
+        myStocksButton = (Button) findViewById(R.id.myStocksButton);
         myStocksButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        marketButton = (ImageButton) findViewById(R.id.marketButton);
+        marketButton = (Button) findViewById(R.id.marketButton);
         marketButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        gamesMenuButton = (ImageButton) findViewById(R.id.gamesButton);
+        gamesMenuButton = (Button) findViewById(R.id.gamesButton);
         gamesMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
