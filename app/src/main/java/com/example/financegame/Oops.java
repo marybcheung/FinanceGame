@@ -45,7 +45,7 @@ public class Oops extends MainActivity {
             }
         });
 
-        tryAgain = (Button) findViewById(R.id.tryagain);
+        tryAgain = (Button) findViewById(R.id.tryagain4);
         tryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
