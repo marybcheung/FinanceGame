@@ -1,21 +1,24 @@
 package com.example.financegame;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageButton;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private Button gamesMenuButton, homeButton, marketButton, myStocksButton;
+    private ImageButton gamesMenuButton, homeButton, marketButton, myStocksButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        homeButton = (Button) findViewById(R.id.homeButton);
+        homeButton = (ImageButton) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        myStocksButton = (Button) findViewById(R.id.myStocksButton);
+        myStocksButton = (ImageButton) findViewById(R.id.myStocksButton);
         myStocksButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        marketButton = (Button) findViewById(R.id.marketButton);
+        marketButton = (ImageButton) findViewById(R.id.marketButton);
         marketButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        gamesMenuButton = (Button) findViewById(R.id.gamesButton);
+        gamesMenuButton = (ImageButton) findViewById(R.id.gamesButton);
         gamesMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
