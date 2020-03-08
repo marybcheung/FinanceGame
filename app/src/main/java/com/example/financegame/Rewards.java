@@ -2,16 +2,17 @@ package com.example.financegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Rewards extends MainActivity {
+    private Button redeemButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_rewards);
 
@@ -47,6 +48,17 @@ public class Rewards extends MainActivity {
                 }
             });
 
-        }
+            redeemButton = (Button) findViewById(R.id.redeemmcd);
+            redeemButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    redeemCoupon();
+                }
+            });
+    }
+
+    public void redeemCoupon() {
+        Intent intent = new Intent(this, RedeemedCoupon.class);
+        startActivity(intent);
     }
 }

@@ -2,19 +2,16 @@ package com.example.financegame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-public class SellStock extends MainActivity {
-    private Button Sell;
+public class RedeemedCoupon extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell_stock);
+        setContentView(R.layout.activity_redeemed_coupon);
 
         homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -47,26 +44,5 @@ public class SellStock extends MainActivity {
                 openGamesMenu();
             }
         });
-
-        rewardsButton = (ImageButton) findViewById(R.id.rewardsButton);
-        rewardsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRewards();
-            }
-        });
-
-        sellButton = (Button) findViewById(R.id.sell);
-        sellButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sell();
-            }
-        });
-    }
-
-    public void sell() {
-        Intent intent = new Intent(this, SellStock.class);
-        startActivity(intent);
     }
 }
