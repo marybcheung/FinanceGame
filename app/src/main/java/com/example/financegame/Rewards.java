@@ -47,13 +47,6 @@ public class Rewards extends MainActivity {
                 }
             });
 
-            rewardsButton = (ImageButton) findViewById(R.id.rewardsButton);
-            rewardsButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    openRewards();
-                }
-            });
         }
     }
 }
