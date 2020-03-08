@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Stocks extends AppCompatActivity {
+public class Stocks extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

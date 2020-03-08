@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private Button gamesMenuButton, homeButton, marketButton, myStocksButton;
+    protected Button gamesMenuButton, homeButton, marketButton, myStocksButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

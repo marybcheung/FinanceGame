@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class GamesMenu extends AppCompatActivity {
+public class GamesMenu extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
