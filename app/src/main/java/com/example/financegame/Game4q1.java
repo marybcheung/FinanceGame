@@ -1,12 +1,9 @@
 package com.example.financegame;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class Game4q1 extends MainActivity {
     private Button rightAnsButton, wrongAnsButton;
@@ -48,7 +45,7 @@ public class Game4q1 extends MainActivity {
             }
         });
 
-        rightAnsButton = (Button) findViewById(R.id.rightans);
+        rightAnsButton = (Button) findViewById(R.id.rightbee);
         rightAnsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,7 +53,7 @@ public class Game4q1 extends MainActivity {
             }
         });
 
-        wrongAnsButton = (Button) findViewById(R.id.wrongans);
+        wrongAnsButton = (Button) findViewById(R.id.wrongbee);
         wrongAnsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

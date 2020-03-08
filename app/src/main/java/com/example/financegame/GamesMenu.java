@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class GamesMenu extends MainActivity {
-    private Button game4Button;
+    private Button game4Button, game3Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +63,23 @@ public class GamesMenu extends MainActivity {
                 openGame4();
             }
         });
+
+        game3Button = (Button) findViewById(R.id.game3button);
+        game3Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGame3();
+            }
+        });
     }
 
     public void openGame4() {
         Intent intent = new Intent(this, Game4.class);
+        startActivity(intent);
+    }
+
+    public void openGame3() {
+        Intent intent = new Intent(this, Game3.class);
         startActivity(intent);
     }
 }

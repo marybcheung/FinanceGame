@@ -1,7 +1,5 @@
 package com.example.financegame;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -47,7 +45,7 @@ public class Game3 extends MainActivity {
             }
         });
 
-        exitButton = (Button) findViewById(R.id.exit);
+        exitButton = (Button) findViewById(R.id.exit2);
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +57,7 @@ public class Game3 extends MainActivity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playGame4();
+                playGame3();
             }
         });
     }
@@ -69,7 +67,7 @@ public class Game3 extends MainActivity {
         startActivity(intent);
     }
 
-    public void playGame4() {
+    public void playGame3() {
         Intent intent = new Intent(this, Game3play.class);
         startActivity(intent);
     }

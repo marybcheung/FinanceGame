@@ -8,7 +8,7 @@
     tools:context=".Game4">
 
     <Button
-        android:id="@+id/exit"
+        android:id="@+id/exit2"
         android:layout_width="56dp"
         android:layout_height="46dp"
         android:background="#00FFFFFF"

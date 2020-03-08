@@ -1,7 +1,5 @@
 package com.example.financegame;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -47,7 +45,7 @@ public class Game4 extends MainActivity {
             }
         });
 
-        exitButton = (Button) findViewById(R.id.exit);
+        exitButton = (Button) findViewById(R.id.exit2);
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
