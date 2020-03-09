@@ -54,7 +54,7 @@ public class Success extends MainActivity {
             }
         });
 
-        super.gameState.incrementPoints(800);
+//        super.gameState.incrementPoints(800);
     }
 
 

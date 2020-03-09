@@ -56,7 +56,7 @@ public class BuyStock extends MainActivity {
             }
         });
 
-        buyButton = (Button) findViewById(R.id.buy);
+        buyButton = (Button) findViewById(R.id.button);
         buyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,5 +68,6 @@ public class BuyStock extends MainActivity {
     public void buy() {
         Intent intent = new Intent(this, Market.class);
         startActivity(intent);
+//        super.gameState.decrementPoints(200);
     }
 }

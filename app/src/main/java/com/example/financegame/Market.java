@@ -65,8 +65,8 @@ public class Market extends MainActivity {
             }
         });
 
-        textView = (TextView) findViewById(R.id.textView);
-        textView.setText(Integer.toString(this.gameState.getPoints()));
+//        textView = (TextView) findViewById(R.id.textView);
+//        textView.setText(Integer.toString(this.gameState.getPoints()));
     }
 
     public void openNewStock() {
